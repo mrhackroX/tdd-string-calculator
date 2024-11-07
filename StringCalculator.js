@@ -1,7 +1,7 @@
 const add = (numbers) => {
   if (!numbers || numbers === "") return 0;
 
-  let delimiter = "";
+  let delimiter = /,|\n/;
   if (numbers.startsWith("//")) {
     delimiter = new RegExp(numbers[2]);
     numbers = numbers.slice(4);
