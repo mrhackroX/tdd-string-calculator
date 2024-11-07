@@ -1,7 +1,6 @@
-// add two comma seperated values. This will work for any numbers of values seperated by comma.
+// handle newlines between number string.
 const { add } = require("./StringCalculator");
 
-test("add two comma seperated values", () => {
-  expect(add("23,17")).toBe(40);
-  expect(add("23,17,45")).toBe(85);
+test("handle newlines between number string", () => {
+  expect(add("23\n17,45")).toBe(85);
 });
