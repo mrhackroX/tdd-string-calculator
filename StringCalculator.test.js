@@ -1,6 +1,6 @@
-// test for empty string
+// if string has only one value, return that value
 const { add } = require("./StringCalculator");
 
-test("If string is blank, return 0.", () => {
-  expect(add("")).toBe(0);
+test("If string has only one value, return that value", () => {
+  expect(add("23")).toBe(23);
 });
