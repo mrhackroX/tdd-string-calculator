@@ -1,6 +1,6 @@
-// handle newlines between number string.
+// Support different delemeters.
 const { add } = require("./StringCalculator");
 
-test("handle newlines between number string", () => {
-  expect(add("23\n17,45")).toBe(85);
+test("Support different delemeters", () => {
+  expect(add("//;\n7;8")).toBe(15); // Example -> //[delimiter]\n[numbers…]
 });
